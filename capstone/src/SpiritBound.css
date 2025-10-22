@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;600&display=swap');
+
+.title-font {
+  font-family: 'Creepster', cursive;
+}
+
+.heading-font {
+  font-family: 'Cinzel', serif;
+}
+
+.body-font {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.glow-text {
+  text-shadow: 
+    0 0 20px rgba(239, 68, 68, 0.8),
+    0 0 40px rgba(239, 68, 68, 0.6),
+    0 0 60px rgba(239, 68, 68, 0.4);
+}
+
+.glow-border {
+  box-shadow: 
+    0 0 20px rgba(239, 68, 68, 0.5),
+    0 0 40px rgba(239, 68, 68, 0.3);
+}
+
+.mist {
+  background: radial-gradient(ellipse at center, rgba(239, 68, 68, 0.1) 0%, transparent 70%);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Parallax is dynamically controlled by JS */
+.parallax {
+  transition: transform 0.2s ease-out;
+}

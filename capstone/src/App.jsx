@@ -240,7 +240,7 @@ const App = () => {
                                 Download Spirit Bound now and experience Filipino horror like never before
                             </p>
                             <button onClick={handleDownload}
-                                className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-lg text-xl heading-font transition-all ease-in-out duration-300 cursor-pointer transform hover:scale-105 glow-border flex items-center gap-3">
+                                className="bg-red-600 hover:bg-red-700 text-white px-10 py-4 rounded-lg text-xl heading-font transition-all ease-in-out duration-300 cursor-pointer transform hover:scale-105 glow-border inline-flex items-center gap-3">
                                 <Download className="w-6 h-6" />
                                 Download Now
                             </button>

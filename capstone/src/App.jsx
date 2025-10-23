@@ -4,7 +4,7 @@ import homepic from './assets/homepic.png'
 import pic1 from './assets/pic1.png';
 import pic2 from './assets/pic2.png';
 import pic10 from './assets/pic10.png';
-import pic8 from './assets/pic8.png';
+import pic11 from './assets/pic11.png';
 import pic5 from './assets/pic5.png';
 import pic6 from './assets/pic6.png';
 import './SpiritBound.css'
@@ -42,7 +42,7 @@ const App = () => {
     };
 
     const gallery = [
-        pic6, pic2, pic5, pic10, pic8, pic1,
+        pic6, pic2, pic5, pic10, pic11, pic1,
     ]
     
     return (

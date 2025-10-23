@@ -178,6 +178,51 @@ const App = () => {
                 </div>
             </section>
 
+            <section id="upgrade" className="py-24 px-4 relative">
+                <div className="absolute inset-0 bg-gradient-to-b from-zinc-950 via-red-950/10 to-zinc-950"></div>
+
+                <div className="max-w-6xl mx-auto relative z-10">
+                    <div className={`fade-in ${isVisible[7] ? 'visible' : ''} text-center mb-16`}>
+                        <h2 className="heading-font text-5xl md:text-6xl mb-6 text-red-500 glow-text">Upgrade System</h2>
+                    <div className="w-24 h-1 bg-red-500 mx-auto glow-border"></div>
+                    </div>
+
+                    <div className="bg-zinc-900/50 p-8 rounded-lg border border-red-900/30 backdrop-blur mb-12 text-center">
+                        <p className="body-font text-lg md:text-xl text-gray-300 leading-relaxed max-w-4xl mx-auto">
+                            Players can allocate points to upgrade one of six attributes using the arrow keys and Confirm button. 
+                            Each attribute influences a different aspect of combat and survival. No on-screen tutorials will guide the player—discover the mechanics through exploration or the game’s official site.
+                        </p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            { name: "Vitality", desc: "Increases maximum health, allowing the player to withstand more damage." },
+                            { name: "Stamina", desc: "Boosts total stamina, enabling longer sprints and more attacks before tiring." },
+                            { name: "Strength", desc: "Enhances melee damage, making close combat strikes more powerful." },
+                            { name: "Throwing", desc: "Improves long-range damage dealt by thrown weapons or projectiles." },
+                            { name: "Crit", desc: "Raises the chance of landing critical hits that deal double damage." },
+                            { name: "Arcane", desc: "Extends the duration of buffs and magical effects used in battle." },
+                        ].map((attr, idx) => (
+                            <div key={idx}
+                            className={`fade-in transition-all ease-in-out duration-300 ${isVisible[8 + idx] ? 'visible' : ''} bg-zinc-900/50 p-8 rounded-lg border border-red-900/30 hover:border-red-500/50 hover:transform hover:scale-105`}>
+                                <h3 className="heading-font text-2xl mb-3 text-red-500">{attr.name}</h3>
+                                <p className="body-font text-gray-400 text-lg leading-relaxed">{attr.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+
+                    <div className={`fade-in ${isVisible[14] ? 'visible' : ''} mt-16 text-center`}>
+                        <p className="heading-font text-2xl text-red-500 mb-4">Example Upgrade Path</p>
+                        <p className="body-font text-lg text-gray-400 mb-8 max-w-3xl mx-auto">
+                            The player may choose to focus on <span className="text-red-500 font-semibold">Vitality</span>, 
+                            <span className="text-red-500 font-semibold"> Stamina</span>, and 
+                            <span className="text-red-500 font-semibold"> Strength</span> early on to increase survivability and melee power.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+
             <section id="features" className="py-24 px-4 relative">
                 <div className="absolute inset-0 bg-zinc-950"></div>
                 

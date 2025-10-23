@@ -3,12 +3,10 @@ import { Sword, Ghost, Heart, Shield, Download, Menu, X } from 'lucide-react';
 import homepic from './assets/homepic.png'
 import pic1 from './assets/pic1.png';
 import pic2 from './assets/pic2.png';
-import pic3 from './assets/pic3.png';
-import pic4 from './assets/pic4.png';
+import pic10 from './assets/pic10.png';
+import pic8 from './assets/pic8.png';
 import pic5 from './assets/pic5.png';
 import pic6 from './assets/pic6.png';
-import pic7 from './assets/pic7.png';
-import pic8 from './assets/pic8.png';
 import './SpiritBound.css'
 
 const App = () => {
@@ -44,7 +42,7 @@ const App = () => {
     };
 
     const gallery = [
-        pic6, pic2, pic5, pic3, pic4, pic1,
+        pic6, pic2, pic5, pic10, pic8, pic1,
     ]
     
     return (

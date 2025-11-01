@@ -116,12 +116,12 @@ const App = () => {
                         <Ghost className="w-20 h-20 text-red-500 mx-auto mb-6 glow-text" />
                     </div> 
                     <h1 className="title-font text-7xl md:text-9xl mb-6 glow-text text-red-500 animate-pulse">
-                        Spirit Bound
+                        SANIB: Ang Sumpa
                     </h1>
                     <p className="body-font text-2xl md:text-3xl mb-8 text-gray-300">
                         A 2D Filipino Horror RPG Inspired by Myths and Legends
                     </p> 
-                    <p className="body-font text-lg md:text-xl mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
+                    <p className="body-font text-lg md:text-2xl mb-12 text-gray-400 max-w-3xl mx-auto leading-relaxed">
                         Journey through cursed lands, battle mythological creatures, and save your village from an ancient evil
                     </p> 
                     <button onClick={handleDownload}
@@ -192,14 +192,12 @@ const App = () => {
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
                         {[
                             { name: "Vitality", desc: "Increases maximum health, allowing the player to withstand more damage." },
                             { name: "Stamina", desc: "Boosts total stamina, enabling longer sprints and more attacks before tiring." },
                             { name: "Strength", desc: "Enhances melee damage, making close combat strikes more powerful." },
                             { name: "Throwing", desc: "Improves long-range damage dealt by thrown weapons or projectiles." },
-                            { name: "Crit", desc: "Raises the chance of landing critical hits that deal double damage." },
-                            { name: "Arcane", desc: "Extends the duration of buffs and magical effects used in battle." },
                         ].map((attr, idx) => (
                             <div key={idx}
                             className={`fade-in transition-all ease-in-out duration-300 ${isVisible[8 + idx] ? 'visible' : ''} bg-zinc-900/50 p-8 rounded-lg border border-red-900/30 hover:border-red-500/50 hover:transform hover:scale-105`}>
